@@ -50,6 +50,20 @@ public class FinancingTests {
 		});
 	}
 	
+	@Test
+	public void setIncomeShouldSetDataWhenValidData() {
+		
+		// arrange
+		Financing f = new Financing(100000.0, 2000.0, 80);
+		
+		// action
+		f.setIncome(2100.0);
+		
+		Assertions.assertEquals(2100.0, f.getIncome());
+	}
+	
+	
+	
 	
 	
 
